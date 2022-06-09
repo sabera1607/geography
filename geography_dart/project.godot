@@ -1,0 +1,43 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Map",
+"language": "GDScript",
+"path": "res://assets/scenes/map.gd"
+} ]
+_global_script_class_icons={
+"Map": ""
+}
+
+[application]
+
+config/name="geography_dart"
+run/main_scene="res://assets/scenes/world.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=500
+window/size/height=300
+window/size/fullscreen=true
+
+[input]
+
+fire={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/scenes/Popup.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup" type="AcceptDialog" parent="."]
+visible = true
+margin_left = 136.0
+margin_top = 71.0
+margin_right = 377.0
+margin_bottom = 182.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="Popup"]
+margin_left = 9.41425
+margin_top = 16.4853
+margin_right = 234.414
+margin_bottom = 65.4853
+__meta__ = {
+"_edit_use_anchors_": false
+}
